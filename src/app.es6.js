@@ -36,4 +36,4 @@ const search = (value) => {
 //initialisation d'un seed de noms pour tester la fonctionnalité de recherche facilement
 let history = ['Christopher','Christophe','Christelle','Thomas','Martin']
 //affichage au premier chargement de lma page des noms présents dans l'array history
-handleHistory(name)
+handleHistory()
