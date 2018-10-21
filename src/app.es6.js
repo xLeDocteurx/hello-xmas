@@ -2,18 +2,14 @@ let get = id => (document.getElementById(id))
 
 let welcome = () => {
     let name = get('input').value
-    
     name == '' ? name = 'Père Noël' : name = name[0].toUpperCase() + name.slice(1).toLowerCase()
     alert(`Bonjour ${name} !`)
-        // element[0].toUpperCase()
 
     handleHistory(name)
 }
 
 const handleHistory = (name) => {
-    if(name){
-        history = [...history, name]
-    }
+    if(name){ history = [...history, name] }
 
     let record = get('history')
     record.innerHTML = ''
